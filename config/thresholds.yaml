@@ -1,0 +1,11 @@
+risk_regimes:
+  normal: [0, 30]
+  elevated: [30, 50]
+  high: [50, 70]
+  severe: [70, 85]
+  crisis: [85, 100]
+alerts:
+  brent_usd: 100
+  hormuz_risk: 80
+  bab_el_mandeb_risk: 75
+  global_energy_risk: 70

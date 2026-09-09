@@ -1,25 +1,33 @@
-# 🎈 Blank app template
+# 🌍 Global Energy War Dashboard V1
 
-A simple Streamlit app template for you to modify!
+Streamlit framework for monitoring global energy supply, chokepoints, oil/LNG,
+shipping stress, macro transmission and Canada.
 
-[![Open in Streamlit](https://static.streamlit.io/badges/streamlit_badge_black_white.svg)](https://blank-app-template.streamlit.app/)
+## Important
+V1 uses a clearly labeled demo/fallback dataset. It is not a live market-data
+terminal. Replace demo fields with validated official/API data before using it
+for investment or operational decisions.
 
-### How to run it on your own machine
+## Risk model
+Supply 25% | Chokepoints 25% | Shipping 15% | Price 15% |
+Geopolitical 10% | Macro 10%
 
-Prerequisite: install `uv` if you don't already have it.
+## Run locally
 
-```
-$ curl -LsSf https://astral.sh/uv/install.sh | sh
-```
+    python -m venv .venv
+    # Windows
+    .venv\Scripts\activate
+    # macOS/Linux
+    source .venv/bin/activate
+    pip install -r requirements.txt
+    streamlit run app.py
 
-1. Sync the dependencies
+## Data roadmap
+Official/free first: EIA, FRED, Bank of Canada Valet, Statistics Canada,
+OPEC public releases and IEA public releases.
 
-   ```
-   $ uv sync
-   ```
+Later: AIS/shipping provider, tanker freight, GDELT/news events and commercial
+energy/shipping feeds.
 
-2. Run the app
-
-   ```
-   $ uv run streamlit run streamlit_app.py
-   ```
+## Disclaimer
+Risk scores are model outputs, not forecasts or investment advice.

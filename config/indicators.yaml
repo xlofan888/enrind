@@ -1,0 +1,5 @@
+brent: {category: oil, source: EIA, frequency: daily}
+wti: {category: oil, source: EIA, frequency: daily}
+cad_usd: {category: canada, source: Bank of Canada, frequency: daily}
+canada_cpi: {category: macro, source: Statistics Canada, frequency: monthly}
+fed_funds: {category: macro, source: FRED, frequency: daily}
